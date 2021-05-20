@@ -1,0 +1,6 @@
+framework module Pods_CSC690_FinalProject_NBAShotChart {
+  umbrella header "Pods-CSC690-FinalProject-NBAShotChart-umbrella.h"
+
+  export *
+  module * { export * }
+}

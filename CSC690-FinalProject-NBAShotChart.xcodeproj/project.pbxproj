@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		02247712264DCD1200DFB5C2 /* CSC690_FinalProject_NBAShotChart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02247710264DCD1200DFB5C2 /* CSC690_FinalProject_NBAShotChart.xcdatamodeld */; };
 		02247714264DCD1500DFB5C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02247713264DCD1500DFB5C2 /* Assets.xcassets */; };
 		02247717264DCD1500DFB5C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02247715264DCD1500DFB5C2 /* LaunchScreen.storyboard */; };
+		022477282650013D00DFB5C2 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 022477272650013D00DFB5C2 /* PythonKit */; };
+		ADFAC40247EDBDC3C64BAFB1 /* Pods_CSC690_FinalProject_NBAShotChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3BB61167231B2248D3629F /* Pods_CSC690_FinalProject_NBAShotChart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		02247713264DCD1500DFB5C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02247716264DCD1500DFB5C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02247718264DCD1500DFB5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E3BB61167231B2248D3629F /* Pods_CSC690_FinalProject_NBAShotChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSC690_FinalProject_NBAShotChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0D6F25BC6260E924B90514 /* Pods-CSC690-FinalProject-NBAShotChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSC690-FinalProject-NBAShotChart.debug.xcconfig"; path = "Target Support Files/Pods-CSC690-FinalProject-NBAShotChart/Pods-CSC690-FinalProject-NBAShotChart.debug.xcconfig"; sourceTree = "<group>"; };
+		A6E51386ED9D3ECC5AE29B54 /* Pods-CSC690-FinalProject-NBAShotChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSC690-FinalProject-NBAShotChart.release.xcconfig"; path = "Target Support Files/Pods-CSC690-FinalProject-NBAShotChart/Pods-CSC690-FinalProject-NBAShotChart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022477282650013D00DFB5C2 /* PythonKit in Frameworks */,
+				ADFAC40247EDBDC3C64BAFB1 /* Pods_CSC690_FinalProject_NBAShotChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				02247706264DCD1200DFB5C2 /* CSC690-FinalProject-NBAShotChart */,
 				02247705264DCD1200DFB5C2 /* Products */,
+				E1660AB4A47338EE7A9C7C19 /* Pods */,
+				12163F2A1748FA035777B7CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +79,23 @@
 			path = "CSC690-FinalProject-NBAShotChart";
 			sourceTree = "<group>";
 		};
+		12163F2A1748FA035777B7CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E3BB61167231B2248D3629F /* Pods_CSC690_FinalProject_NBAShotChart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1660AB4A47338EE7A9C7C19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B0D6F25BC6260E924B90514 /* Pods-CSC690-FinalProject-NBAShotChart.debug.xcconfig */,
+				A6E51386ED9D3ECC5AE29B54 /* Pods-CSC690-FinalProject-NBAShotChart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +103,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0224771B264DCD1500DFB5C2 /* Build configuration list for PBXNativeTarget "CSC690-FinalProject-NBAShotChart" */;
 			buildPhases = (
+				E9C08CB079762F06DB6B604E /* [CP] Check Pods Manifest.lock */,
 				02247700264DCD1200DFB5C2 /* Sources */,
 				02247701264DCD1200DFB5C2 /* Frameworks */,
 				02247702264DCD1200DFB5C2 /* Resources */,
+				02860E5B9144F9BFF69BA582 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "CSC690-FinalProject-NBAShotChart";
+			packageProductDependencies = (
+				022477272650013D00DFB5C2 /* PythonKit */,
+			);
 			productName = "CSC690-FinalProject-NBAShotChart";
 			productReference = 02247704264DCD1200DFB5C2 /* CSC690-FinalProject-NBAShotChart.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +144,9 @@
 				Base,
 			);
 			mainGroup = 022476FB264DCD1200DFB5C2;
+			packageReferences = (
+				022477262650013D00DFB5C2 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 02247705264DCD1200DFB5C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,6 +168,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02860E5B9144F9BFF69BA582 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CSC690-FinalProject-NBAShotChart/Pods-CSC690-FinalProject-NBAShotChart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CSC690-FinalProject-NBAShotChart/Pods-CSC690-FinalProject-NBAShotChart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CSC690-FinalProject-NBAShotChart/Pods-CSC690-FinalProject-NBAShotChart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C08CB079762F06DB6B604E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CSC690-FinalProject-NBAShotChart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02247700264DCD1200DFB5C2 /* Sources */ = {
@@ -287,6 +363,7 @@
 		};
 		0224771C264DCD1500DFB5C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B0D6F25BC6260E924B90514 /* Pods-CSC690-FinalProject-NBAShotChart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,7 +373,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ieke.CSC690-FinalProject-NBAShotChart";
+				PRODUCT_BUNDLE_IDENTIFIER = "ieke.CSC690-FinalProject-NBAStats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,6 +382,7 @@
 		};
 		0224771D264DCD1500DFB5C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E51386ED9D3ECC5AE29B54 /* Pods-CSC690-FinalProject-NBAShotChart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,7 +392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ieke.CSC690-FinalProject-NBAShotChart";
+				PRODUCT_BUNDLE_IDENTIFIER = "ieke.CSC690-FinalProject-NBAStats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,6 +421,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		022477262650013D00DFB5C2 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		022477272650013D00DFB5C2 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 022477262650013D00DFB5C2 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		02247710264DCD1200DFB5C2 /* CSC690_FinalProject_NBAShotChart.xcdatamodeld */ = {
