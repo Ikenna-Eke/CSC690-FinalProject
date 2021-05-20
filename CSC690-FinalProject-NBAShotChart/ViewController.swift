@@ -11,7 +11,7 @@ import Charts
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
    
-    let statPickerData  = ["Points", "Assists"]
+    let statPickerData  = ["Points", "Assists","Rebounds","Steals"]
     var value: Int = 0
     @IBOutlet weak var BarGraph: UIView!
     
@@ -42,11 +42,31 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         assist.append(BarChartDataEntry(x: Double(3), y: Double(8.9)))
         assist.append(BarChartDataEntry(x: Double(4), y: Double(8.6)))
         
+        var reb = [BarChartDataEntry]()
+        reb.append(BarChartDataEntry(x: Double(1), y: Double(14.3)))
+        reb.append(BarChartDataEntry(x: Double(2), y: Double(13.5)))
+        reb.append(BarChartDataEntry(x: Double(3), y: Double(12.5)))
+        reb.append(BarChartDataEntry(x: Double(4), y: Double(12.0)))
+        
+        var steals = [BarChartDataEntry]()
+        steals.append(BarChartDataEntry(x: Double(1), y: Double(2.1)))
+        steals.append(BarChartDataEntry(x: Double(2), y: Double(1.9)))
+        steals.append(BarChartDataEntry(x: Double(3), y: Double(1.7)))
+        steals.append(BarChartDataEntry(x: Double(4), y: Double(1.6)))
+        
         var entries = point
         var tag:String = "Points"
         if(value==1){
             entries = assist
             tag = "Assist"
+        }
+        else if(value==2){
+            entries = reb
+            tag = "Rebounds"
+        }
+        else if(value==3){
+            entries = steals
+            tag = "Steals"
         }
         let set = BarChartDataSet(entries: entries, label: tag)
         let data = BarChartData(dataSet: set)
@@ -62,7 +82,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
         self.statPicker.delegate = self
         self.statPicker.dataSource = self
-        createChart()
+        
         
         
     }
